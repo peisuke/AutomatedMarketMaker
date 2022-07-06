@@ -1,4 +1,4 @@
-# Automated Market Maker 
+# Automated Market Maker (WalletSample用ブランチ)
 
 *注意: 勉強用に作ったサンプルなので、このまま利用するのはお止めください。本プログラム及びその派生物を利用した事により生じたいかなる損害に関しても一切責任を負いません。*
 
