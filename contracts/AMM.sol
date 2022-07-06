@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import './Math.sol';
-import './FirstToken.sol';
-import './SecondToken.sol';
+import './FakeJPYC.sol';
+import './MyToken.sol';
 
 contract AMM {
     using SafeMath for uint;

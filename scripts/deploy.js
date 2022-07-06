@@ -1,17 +1,17 @@
 const hre = require("hardhat");
 
 async function main() {
-  const FirstToken = await hre.ethers.getContractFactory("FirstToken");
+  const FirstToken = await hre.ethers.getContractFactory("FakeJPYC");
   const firstToken = await FirstToken.deploy();
   
-  const SecondToken = await hre.ethers.getContractFactory("SecondToken");
+  const SecondToken = await hre.ethers.getContractFactory("MyToken");
   const secondToken = await SecondToken.deploy();
 
   await firstToken.deployed();
   await secondToken.deployed();
 
-  console.log("FirstToken deployed to:", firstToken.address);
-  console.log("SecondToken deployed to:", secondToken.address);
+  console.log("FakeJPYC deployed to:", firstToken.address);
+  console.log("MyToken deployed to:", secondToken.address);
 
   const AMM = await hre.ethers.getContractFactory("AMM");
   const amm = await AMM.deploy(firstToken.address, secondToken.address);

@@ -15,8 +15,8 @@ function expandTo18Decimals(n) {
 }
 
 beforeEach(async function () {
-    const FirstToken = await hre.ethers.getContractFactory("FirstToken");
-    const SecondToken = await hre.ethers.getContractFactory("SecondToken");
+    const FirstToken = await hre.ethers.getContractFactory("FakeJPYC");
+    const SecondToken = await hre.ethers.getContractFactory("MyToken");
 
     firstToken = await FirstToken.deploy();
     secondToken = await SecondToken.deploy();
